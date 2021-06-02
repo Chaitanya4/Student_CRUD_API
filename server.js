@@ -27,7 +27,7 @@ mongoose.connect(config.url,{useNewUrlParser:true, useUnifiedTopology: true,useF
     console.log('Could not connect to the database.');
     process.exit();
 });
-
+app.set('port', (5000));
 // default route
 app.get('/', (req, res) => {
     res.json({"message": "Welcome to Demo Employee app"});
