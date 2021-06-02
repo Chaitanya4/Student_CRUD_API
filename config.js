@@ -1,5 +1,5 @@
 module.exports = {
     url:'mongodb+srv://Chaitanya:Chaitanya@07@crudcluster.q96oz.mongodb.net/EmployeeDB?retryWrites=true&w=majority',
-    serverport: 8000 
+    serverport: 3000 
 }
 
