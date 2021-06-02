@@ -1,5 +1,5 @@
 module.exports = {
-    url:'mongodb://localhost:27017/student',
+    url:'mongodb+srv://Chaitanya:Chaitanya@07@crudcluster.q96oz.mongodb.net/EmployeeDB?retryWrites=true&w=majority',
     serverport: 8000 
 }
 

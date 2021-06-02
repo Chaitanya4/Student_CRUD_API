@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
 
 const config=require('./config.js');
 const mongoose=require('mongoose');
-require('./student.route.js')(app);
+require('./employee.route.js')(app);
 mongoose.Promise=global.Promise;
 mongoose.connect(config.url,{useNewUrlParser:true, useUnifiedTopology: true,useFindAndModify:false}).then(
     ()=>{console.log("Database connected successfully ");}
@@ -30,7 +30,7 @@ mongoose.connect(config.url,{useNewUrlParser:true, useUnifiedTopology: true,useF
 
 // default route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to Demo Product app"});
+    res.json({"message": "Welcome to Demo Employee app"});
 });
 
 // listen on port 8000
