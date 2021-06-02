@@ -34,6 +34,6 @@ app.get('/', (req, res) => {
 });
 
 // listen on port 8000
-app.listen(config.serverport, () => {
+app.listen(config.serverport,'0.0.0.0', () => {
     console.log("Server is listening on port 8000");
 });
