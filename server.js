@@ -27,13 +27,13 @@ mongoose.connect(config.url,{useNewUrlParser:true, useUnifiedTopology: true,useF
     console.log('Could not connect to the database.');
     process.exit();
 });
-app.set('port', (5000));
+port = process.env.PORT || 5000;
 // default route
 app.get('/', (req, res) => {
     res.json({"message": "Welcome to Demo Employee app"});
 });
 
 // listen on port 5000
-app.listen(config.serverport,"0.0.0.0", () => {
+app.listen(port,"0.0.0.0", () => {
     console.log("Server is listening on port 5000");
 });
